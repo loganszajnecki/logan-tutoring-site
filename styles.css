@@ -1,3 +1,8 @@
+html {
+  scroll-padding-top: 80px;
+  scroll-behavior: smooth;
+}
+
 /* Base layout */
 body {
   font-family: Arial, sans-serif;
@@ -49,7 +54,7 @@ nav {
 nav ul {
   list-style: none;
   margin: 0;
-  padding: 80;
+  padding: 0;
   display: inline-flex;
   gap: 2em;
 }
@@ -67,6 +72,30 @@ nav a:hover {
 /* Links */
 a {
   color: #007acc;
+}
+
+/* Social icons */
+.social-icons {
+  margin: 1em 0;
+  display: flex;
+  gap: 2em;
+  align-items: center;
+}
+
+.social-icons img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.2s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
+
+/* Media images and video */
+#media img, #media video {
+  margin: 1em 0;
+  display: block;
 }
 
 /* Responsive */
